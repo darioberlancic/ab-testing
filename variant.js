@@ -2,9 +2,9 @@
 // @name         Variant
 // @namespace    https://www.domain.com
 // @version      0.1
-// @description  Ticket 320
-// @author       Testing Agency: Dario Berlancic
-// @match        http://www.berlancic.com/
+// @description  Description
+// @author       Dario Berlancic
+// @match        http://www.domain.com/
 // @grant        none
 // ==/UserScript==
 (function IIFE() {
@@ -26,7 +26,7 @@
     ///////////////////////
     // Create new `Variant`
     //////////////////////
-    var v = new Variant('#333', 'UI Variant', 'Testing Agency: Dario Berlancic');
+    var v = new Variant('#333', 'UI Variant', 'Master of Disaster: Dario Berlancic');
     v.on();
 
   }, false);
@@ -194,9 +194,9 @@
 
     function _selectors() {
       return {
-        header: '.b-dev-header',
-        main: '.home',
-        footer: '.b-dev-footer'
+        header: '#header',
+        main: '#main',
+        footer: '#footer'
       };
     }
 
